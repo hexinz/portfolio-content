@@ -12,27 +12,38 @@ h1{
 	font-weight: bold;
 }
 
-
 .active{
 	background: white;
     text-transform: uppercase;
 	text-align: center;
 }
 
-.active a{
-	text-decoration: none;;
-}
-
 /*Style the images*/
-img{
-    height: 200px;
-    width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 10px;
+.act_images {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: baseline;
+	text-align: center;
+  }
+  
+.horizontal_align {
+	/* position: static; */
+	/* float: left; */
+	padding: 5px;
+	text-align: left;
+	/* padding-left:5px; 
+	padding-right:5px;   */
+	margin-left:5px; 
+	margin-right:5px;
+  }
+
+figcaption {
+	font-size: 10px;
 }
 
+  
 /*Make the h2 heading match h1*/
 h2{
 	font-size: 2em; 
