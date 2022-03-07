@@ -3,11 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	<!-- Link to the favicon image -->
 	<link rel="icon" href="images/favicon.ico">
-	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
-	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Food in Shanghai</title>
 </head>
@@ -17,68 +14,47 @@
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav>
-			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
-				<li class="active"><a href = "index.html" >Shanghai Food</a></li>
-				<li><a href = "family.html">Family Food</a></li>
-				<li><a href = "chinese.html">Chinese Cuisine</a></li>
-				<li><a href = "foreign.html">Foreign Food</a></li>
-			</ul>
-		</nav>
-		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>What you can eat in Shanghai?</h1>
+		<div class="intro">
+			<!-- The h1 is a semantic tag that aids accessibility -->
+			<a href = "#home"><h1>What you can eat in Shanghai?</h1></a>
+		</div>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
+	<main class="container">
+		<div class="home" id="home">
 		<p>
 		   What have come to your mind when thinking about food in Shanghai? Tranditional Chinese cuisine? That's a must. 
 		   If you have ever been there, you will know that you can definitely expect way more than that. As a Shanghainese 
 		   who have lived in Shanghai for more than 20 years, I'd love to lead you through those amazing food in my hometown.
 		   Don't miss the chance to see, feel, and even try them out yourself! Welcome to the Shanghai Food Tour!
 		</p>
-		<p>
-			As a metropolis, there are around 40 mechelin star restaurants in Shanghai, including Cantonese, French 
-			food, Italian food, even innovative food. Although they are extremely delicious, they are usually expensive. 
-			It is common to spend more than $500 per person in a mechelin star restaurant in Shanghai.
-		</p>
-		<div class="act_images">
-			<figure class="horizontal_align">
-				<img src="images/michelin-french.jpg" alt = "Shanghai-Michelin-Restaurant-French-Food" width="200"/>
-				<figcaption>L'Atelier de Joël Robuchon</figcaption>
-
-			</figure>
-			<figure class="horizontal_align">
-				<img src="images/michelin-italian.jpg" alt = "Shanghai-Michelin-Restaurant-Italian-Food" width="200"/>
-				<figcaption>8 ½ Otto e Mezzo Bombana</figcaption>
-			</figure>
-			<figure class="horizontal_align">
-				<img src="images/michelin-cantonese.jpg" alt = "Shanghai-Michelin-Restaurant-Cantonese-Food" width="200"/>
-				<figcaption>Ji Pin Court</figcaption>
-			</figure>
-			<figure class="horizontal_align">
-				<img src="images/michelin-innovative.jpg" alt = "Shanghai-Michelin-Restaurant-Innovative-Food" width="200"/>
-				<figcaption>Taian Table</figcaption>
-			</figure>
 		</div>
-		<p>
-			There are also a large amount of high-class restaurants that are not necessary Michelin Restaurant but are located 
-			in the most famous tourist attractions. <strong>The bund</strong> is one of the most famous places in Shanghai. 
-			There are also of course lots of high-level restaurant at the Bund where both Chinese people and foreign people 
-			would love to come. There are also restaurants in Yu Garden, Chenghuang Temple, etc.
-		</p>
-		 <div class="act_images">
-			 <figure class="horizontal_align">
-				 <img src="images/bund-restaurant.jpg" alt = "M-On-Bund-Fine-Dining-shanghai-top-restaurant" width="200"/>
-				 <figcaption>Famous Restaurant at the Bund</figcaption>
-			 </figure>
-			 <figure class="horizontal_align">
-			 <img src="images/yu-garden.jpg" alt = "Yu-Garden-Fine-Dining-shanghai-top-restaurant" width="200"/>
-			 <figcaption>Famous Restaurant at the Yu Garden</figcaption>
-		 	</figure>
-		 </div>
-		
+		<div class="famous_image">
+			<a href = "famous.html"><img src="images/michelin-french.jpg" alt = "Shanghai-Michelin-Restaurant-French-Food" width="800"/></a>
+		</div>
+		<div class="chinese_image">
+			<a href = "chinese.html"><img src="images/beijing-roasted-duck.jpg" alt="Beijing-Roasted-Duck" width="800"></a>
+		</div>
+		<div class="family_image">
+			<a href = "family.html"><img src="images/barbeque-food.jpg" alt="Shanghai-Family-Barbeque-Food" width="800"></a>
+		</div>
+		<div class="foreign_image">
+			<a href = "foreign.html"><img src="images/sushi-cuttlefish.jpg" alt = "Japanese-Omakase-Sushi-Cuttlefish" width="800"/></a>
+		</div>
+		<div class="famous">
+			<p>Famous Food</p>
+		</div>
+		<div class="chinese">
+			<p>Chinese Food</p>
+		</div>
+		<div class="family">
+			<p>Family Food</p>
+		</div>
+		<div class="foreign">
+			<p>Foreign Food</p>
+		</div>
+
 	</main>
 
 	<!-- Footer is a sematic tag page that aids readability -->

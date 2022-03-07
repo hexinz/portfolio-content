@@ -1,23 +1,41 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
-body{
-	margin:1%;
-	padding:1%;
-	font-size:150%;
+*{
+	font-family: 'Verdana';
 }
+body{
+	font-size:150%;
+	background-color:lightgray;
+}
+
+.intro{
+	background-image: url("../images/shanghai.jpg");
+	background-color: #707070;
+	/* Set a specific height */
+	min-height: 500px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 /*Make the h1 heading bigger with a bold font*/
 h1{
-	font-size: 2em; 
+	font-size: 3em; 
 	font-weight: bold;
 	color: navy;
-	margin: 30px 0;
+	/* color:lightsalmon; */
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 50px;
 }
 
 /*Add borders around the main components and some
 space too*/
 header, nav, main, h1{
-	margin: 10px 0;
+	margin: auto 0;
 }
 
 
@@ -27,10 +45,25 @@ footer{
 	margin-top: 30px;
 }
 
+nav{
+	background-color: #ddd;
+	padding: 25px 10px;;    
+	text-align: left;   
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	display: inline;
+	margin-right: 5%;
+}
+
 
 /*Change the styling for all of the list 
 items in the nav section*/
-nav li{
+/* nav li{
 	background-color: lightblue;
 	padding:10px;
 	width:25%;
@@ -38,18 +71,30 @@ nav li{
 	display: inline-block;
 	width: 20%;
 	
-}
-a{
+} */
+nav a{
+	color: black;
 	text-decoration: none;
 }
 
+.intro a{
+	text-decoration: none;
+}
+
+.intro h1:hover{
+	color:lightsalmon;
+	font-weight: bold;
+}
+
 nav a:hover{
-	color:#F7882F;
+	color:lightsalmon;
 	text-decoration: underline;
+    text-decoration-style: wavy;
+	font-weight: bold;
 }
 
 .active{
-	background: white;
+	font-weight: bold;
     text-transform: uppercase;
 	text-align: center;
 }
@@ -62,6 +107,11 @@ nav a:hover{
 	flex-wrap: wrap;
 	align-items: baseline;
 	text-align: center;
+	margin: 30px;
+}
+
+.act_images img{
+	width: 200px;
 }
   
 .horizontal_align {
@@ -77,9 +127,8 @@ nav a:hover{
 
 img{
     border: 3px solid black;
-    margin: 10px;
     display: inline;
-	width: 300px;
+	width: 100%;
 }
 
 img:hover{
@@ -95,18 +144,140 @@ figcaption {
   
 /*Make the h2 heading match h1*/
 h2{
+	text-align: center;
 	font-size: 2em; 
 	font-weight: bold;
 }
 
 /*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
+p, h2 {
+    padding: 30px;
 }
 
 
-
 /*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+/* a:visited{color:#0000FF} */
 
 
+.container{
+	/* Requirement 5 code here*/
+	background-image: url('../images/concrete_seamless.png');
+	display: grid;
+	max-height: 2500px;
+	grid-template-columns: 1fr 4fr 1fr;
+	row-gap: 30px;
+	align-items: center;
+	justify-items: center;
+}
+
+.home{
+	grid-column-start: 2;
+	overflow: hidden;
+	padding: 10px;
+	margin: 30px 0;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, .2);
+	align-self: center;
+	max-height: 25vh;
+	overflow: scroll;
+}
+
+
+.famous_image, .chinese_image, .family_image, .foreign_image{
+	grid-column-start: 2;
+}
+
+.famous_image{
+	grid-row-start: 2;
+}
+
+.family_image{
+	grid-row-start: 3;
+}
+
+.chinese_image{
+	grid-row-start: 4;
+}
+
+.foreign_image{
+	grid-row-start: 5;
+}
+
+.famous, .chinese, .family, .foreign{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 2.5em;
+	z-index: 5;
+	grid-column-start: 2;
+}
+
+.famous{
+	grid-row-start: 2;
+}
+
+.family{
+	grid-row-start: 3;
+}
+
+.chinese{
+	grid-row-start: 4;
+}
+
+.foreign{
+	grid-row-start: 5;
+}
+
+
+@media screen and (min-width: 900px){
+	.container{
+		align-items: center;
+		column-gap: 30px;
+		max-height: 2500px;
+		grid-template-columns: 1fr 4fr 4fr 1fr;
+	}
+	.home{
+		grid-column: 2 / span 2;
+		grid-row-start: 1;
+	}
+	.famous_image{
+		grid-column-start: 2;
+		grid-row-start: 2;
+	}
+	
+	.family_image{
+		grid-column-start: 3;
+		grid-row-start: 2;
+	}
+	
+	.chinese_image{
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+	
+	.foreign_image{
+		grid-column-start: 3;
+		grid-row-start: 3;
+	}
+
+	.famous{
+		grid-column-start: 2;
+		grid-row-start: 2;
+	}
+	
+	.family{
+		grid-column-start: 3;
+		grid-row-start: 2;
+	}
+	
+	.chinese{
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+	
+	.foreign{
+		grid-column-start: 3;
+		grid-row-start: 3;
+	}
+	
+}
