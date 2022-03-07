@@ -43,8 +43,12 @@ footer{
 	background-color: lightblue;
 	padding: 32px 8px;
 	margin-top: 30px;
+	
 }
 
+footer p:after{
+    content: ' \1F448';
+}
 nav{
 	background-color: #ddd;
 	padding: 25px 10px;;    
@@ -228,6 +232,16 @@ p, h2 {
 	grid-row-start: 5;
 }
 
+h1{
+    animation: title_grow 5s 1;
+}
+
+
+@keyframes title_grow {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 @media screen and (min-width: 900px){
 	.container{
@@ -280,4 +294,12 @@ p, h2 {
 		grid-row-start: 3;
 	}
 	
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    /*Requirement 15*/
+    #logo{
+      animation: none;
+    }
 }
