@@ -1,9 +1,10 @@
 /*Add padding and margin to space out the page.
 Make the font larger too.*/
 *{
-	font-family: 'Verdana';
+	font-family: 'Josefin Sans'; 
 }
 body{
+	font-family: 'Josefin Sans'; 
 	font-size:150%;
 	background-color:lightgray;
 }
@@ -40,6 +41,7 @@ header, nav, main, h1{
 
 
 footer{
+	font-family: 'Josefin Sans'; 
 	background-color: lightblue;
 	padding: 32px 8px;
 	/* margin-top: 30px; */
@@ -93,7 +95,7 @@ input {
 }
 span{
 	margin-left:20%;
-	font-family: italic;
+	/* font-family: italic; */
 	font-weight: bold;
 }
   
