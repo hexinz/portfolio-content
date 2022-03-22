@@ -233,7 +233,7 @@ p, h2 {
 	/* Requirement 5 code here*/
 	background-image: url('../images/concrete_seamless.png');
 	display: grid;
-	max-height: 2500px;
+	max-height: 3000px;
 	grid-template-columns: 1fr 4fr 1fr;
 	row-gap: 30px;
 	align-items: center;
@@ -316,7 +316,7 @@ form:focus{
 }
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
 	.container{
 		align-items: center;
 		column-gap: 30px;
