@@ -24,7 +24,7 @@ body{
 
 /*Make the h1 heading bigger with a bold font*/
 h1{
-	font-size: 3em; 
+	font-size: 100px; 
 	font-weight: bold;
 	color: navy;
 	/* color:lightsalmon; */
@@ -52,6 +52,7 @@ footer p:after{
     content: ' \1F448';
 }
 nav{
+	font-size: 1.5em;
 	background-color: #ddd;
 	padding: 25px 10px;;    
 	text-align: left;   
@@ -181,7 +182,7 @@ nav a:hover{
 }
 
 .act_images img{
-	width: 200px;
+	width: 400px;
 }
   
 .horizontal_align {
@@ -207,7 +208,7 @@ img:hover{
 }
 
 figcaption {
-	font-size: 10px;
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -241,6 +242,7 @@ p, h2 {
 }
 
 .home{
+	font-size: 1.5em;
 	grid-column-start: 2;
 	overflow: hidden;
 	padding: 10px;
@@ -277,7 +279,7 @@ p, h2 {
 	text-align: center;
 	color: white;
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 4.5em;
 	z-index: 5;
 	grid-column-start: 2;
 }
