@@ -325,9 +325,16 @@ form:focus{
 		max-height: 2500px;
 		grid-template-columns: 1fr 4fr 4fr 1fr;
 	}
+	nav{
+		font-size: 1em;
+	}
 	.home{
+		font-size: 1em;
 		grid-column: 2 / span 2;
 		grid-row-start: 1;
+	}
+	.famous, .chinese, .family, .foreign{
+		font-size: 2.5em;
 	}
 	.famous_image{
 		grid-column-start: 2;
