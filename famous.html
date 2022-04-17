@@ -2,14 +2,17 @@
 <html lang="en"></html>
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Mono&display=swap" rel="stylesheet">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ98V9PHKD"></script>
 	<!-- icon Kit -->
-	<script src="https://kit.fontawesome.com/37623896fc.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/a2292d14c8.js" crossorigin="anonymous"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
@@ -25,8 +28,9 @@
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
+			<div class="skip"><a href="#main">Skip to Main Content</a></div>
 			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a href = "index.html" >Home</a></li>
 				<li class="active"><a href = "famous.html" >Famous Food</a></li>
 				<li><a href = "family.html">Family Food</a></li>
 				<li><a href = "chinese.html">Chinese Cuisine</a></li>
@@ -36,58 +40,142 @@
 		</nav>
 		<div class="intro">
 			<!-- The h1 is a semantic tag that aids accessibility -->
-			<a href = "index.html"><h1>What you can eat in Shanghai?</h1></a>
+			<a href = "#main"><h1>Famous Food in Shanghai!</h1></a>
 		</div>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
-	<main>
-		<h2>Famous Food</h2>
-		<div>
+	<main id="main">
+		<div class="paragraph">
 		<p>
-			As a metropolis, there are around 40 mechelin star restaurants in Shanghai, including Cantonese, French 
+			As a metropolis, there are around <strong>40 mechelin star restaurants <i class="fa-solid fa-utensils"></i></strong> in Shanghai, including Cantonese, French 
 			food, Italian food, even innovative food. Although they are extremely delicious, they are usually expensive. 
-			It is common to spend more than $500 per person in a mechelin star restaurant in Shanghai.
+			It is common to spend more than <strong>$500</strong> per person in a mechelin star restaurant in Shanghai.
 		</p>
 		</div>
 		<div class="act_images">
-			<figure class="horizontal_align">
+			<div class="restaurant">
 				<img src="images/michelin-french.jpg" alt = "Shanghai-Michelin-Restaurant-French-Food" width="200"/>
-				<figcaption>L'Atelier de Joël Robuchon</figcaption>
-
-			</figure>
-			<figure class="horizontal_align">
+				<h2>French</h2> 
+				<h3>
+					<a href="javascript:void(0);" id="star_1" style="display: true;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="display: none; color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Add favourite!
+					</a>
+					<a href="javascript:void(0);" id="un_star_1" style="display: none;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Remove from favourites
+					</a>
+				</h3>
+				<h4>L'Atelier de Joël Robuchon</h4> 
+				
+				<ul>
+					<li><i class="fa-solid fa-location-dot"></i> 83 Changshu Road</li>
+				</ul>
+			</div>
+			<div class="restaurant">
 				<img src="images/michelin-italian.jpg" alt = "Shanghai-Michelin-Restaurant-Italian-Food" width="200"/>
-				<figcaption>8 ½ Otto e Mezzo Bombana</figcaption>
-			</figure>
-			<figure class="horizontal_align">
+				<h2>Italian</h2>
+				<h3>
+					<a href="javascript:void(0);" id="star_2" style="display: true;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="display: none; color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Add favourite!
+					</a>
+					<a href="javascript:void(0);" id="un_star_2" style="display: none;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Remove from favourites
+					</a>
+				</h3>
+				<h4>8 ½ Otto e Mezzo Bombana</h4>
+				<ul>
+					<li><i class="fa-solid fa-location-dot"></i> 169 Yuanmingyuan Road</li>
+				</ul>
+			</div>
+			<div class="restaurant">
 				<img src="images/michelin-cantonese.jpg" alt = "Shanghai-Michelin-Restaurant-Cantonese-Food" width="200"/>
-				<figcaption>Ji Pin Court</figcaption>
-			</figure>
-			<figure class="horizontal_align">
+				<h2>Cantonese</h2>
+				<h3>
+					<a href="javascript:void(0);" id="star_3" style="display: true;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="display: none; color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Add favourite!
+					</a>
+					<a href="javascript:void(0);" id="un_star_3" style="display: none;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Remove from favourites
+					</a>
+				</h3>
+				<h4>Ji Pin Court</h4>
+				<ul>
+					<li><i class="fa-solid fa-location-dot"></i> 155 South Wulumuqi Road</li>
+				</ul>
+			</div>
+			<div class="restaurant">
 				<img src="images/michelin-innovative.jpg" alt = "Shanghai-Michelin-Restaurant-Innovative-Food" width="200"/>
-				<figcaption>Taian Table</figcaption>
-			</figure>
+				<h2>Innovative</h2>
+				<h3>
+					<a href="javascript:void(0);" id="star_4" style="display: true;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="display: none; color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Add favourite!
+					</a>
+					<a href="javascript:void(0);" id="un_star_4" style="display: none;">
+					<div class="fa-stack">
+					<i class="fa fa-star fa-stack-1x" style="color: orange;"></i>
+					<i class="fa fa-star-o fa-stack-1x"></i>
+					</div>Remove from favourites
+					</a>
+				</h3>
+				<h4>Taian Table</h4>
+				<ul>
+					<li><i class="fa-solid fa-location-dot"></i> 465 Zhenning Road</li>
+				</ul>
+			</div>
 		</div>
+		<div class="paragraph">
 		<p>
 			There are also a large amount of high-class restaurants that are not necessary Michelin Restaurant but are located 
 			in the most famous tourist attractions. <strong>The bund</strong> is one of the most famous places in Shanghai. 
 			There are also of course lots of high-level restaurant at the Bund where both Chinese people and foreign people 
-			would love to come. There are also restaurants in Yu Garden, Chenghuang Temple, etc.
+			would love to come. There are also restaurants in <strong>Chenghuang Temple, Jin Mao Tower, Yu Garden</strong>, etc.
 		</p>
+		</div>
 		 <div class="act_images">
-			 <figure class="horizontal_align">
-				 <img src="images/bund-restaurant.jpg" alt = "M-On-Bund-Fine-Dining-shanghai-top-restaurant" width="200"/>
-				 <figcaption>Famous Restaurant at the Bund</figcaption>
-			 </figure>
-			 <figure class="horizontal_align">
-			 <img src="images/yu-garden.jpg" alt = "Yu-Garden-Fine-Dining-shanghai-top-restaurant" width="200"/>
-			 <figcaption>Famous Restaurant at the Yu Garden</figcaption>
-		 	</figure>
+			<div class="place">
+				<p> Restaurant at the Bund </p>
+				<img src="images/bund.jpg" alt = "M-On-Bund-Fine-Dining-shanghai-top-restaurant" width="200"/>
+			</div>
+			<div class="place">
+				<p> Buffet at Jin Mao Tower </p>
+				<img src="images/buffet.jpg" alt = "JinMao-Fine-Dining-shanghai-top-restaurant" width="200"/>
+			</div>
+			 <div class="place">
+				<p> Chenghuang Temple </p>
+				<img src="images/chenghuang.jpg" alt = "Chenghuang-shanghai" width="200"/>
+			</div>
+			<div class="place">
+				<p> Dumplings in the Temple </p>
+				<img src="images/chenghuang-food.jpg" alt = "Chenghuang-Dumpling-shanghai" width="200"/>
+			</div>
+			
 		 </div>
-		
-	</main>
 
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    crossorigin="anonymous"></script>
+	<script src="js/famous.js"></script>
 	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>
 		<p>H. Cora Zhang &copy; 2022; <a href = "contact.html" >Contact Me!</a></p>
